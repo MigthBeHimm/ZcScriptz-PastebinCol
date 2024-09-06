@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZcScriptz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ZcScriptz - Paste and Share Script</h1>
+
+        <!-- Title input -->
+        <form id="titleForm">
+            <label for="pasteTitle">Custom Title:</label>
+            <input type="text" id="pasteTitle" placeholder="Enter your title here"><br>
+        </form>
+
+        <!-- Password input -->
+        <form id="passwordForm">
+            <label for="pastePassword">Set a password for your paste:</label>
+            <input type="password" id="pastePassword" placeholder="Set a password to manage your paste"><br>
+        </form>
+
+        <!-- Text Area for Paste -->
+        <form id="pasteForm">
+            <label for="pasteText">Paste your content:</label>
+            <textarea id="pasteText" rows="10" placeholder="Paste your text here..."></textarea><br>
+            <button type="submit">Publish</button>
+        </form>
+
+        <!-- Search bar -->
+        <div id="searchBar">
+            <label for="searchText">Search Published Content:</label>
+            <input type="text" id="searchText" placeholder="Search..." oninput="searchContent()">
+        </div>
+
+        <!-- Display Published Content -->
+        <div id="publishedSection">
+            <h2>Published Pastes</h2>
+            <div id="pastesContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+Copyright © 2024-2030 ZcScriptz, xChrizzc. All rights reserved.
+
